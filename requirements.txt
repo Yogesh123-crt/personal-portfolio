@@ -1,0 +1,2 @@
+no need requirements.txt .
+because this is a personal portfolio website and it does not require any external libraries or dependencies. The website can be built using just HTML only. which are all supported by modern web browsers. Therefore, there is no need for a requirements.txt file in this case.
