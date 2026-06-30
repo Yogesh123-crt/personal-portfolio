@@ -1,27 +1,50 @@
 # Personal Portfolio Website
 
-This is my personal portfolio website created using HTML only.
+This is my personal portfolio website created using HTML and CSS.
 
-## About Me
+## Project Overview
 
-My name is Yogesh Kumar. I am currently pursuing my Bachelor of Engineering degree in Information Technology from MBM University, Jodhpur.
+This project is a simple and responsive personal portfolio website. It contains my personal information, skills, contact form, and important profile links like LinkedIn, GitHub, and LeetCode.
 
-I am interested in web development, programming, problem solving, databases, artificial intelligence, and computer networks.
+## Objective
 
-I have also completed my first certified internship at iStart, Government of Rajasthan.
+The main objective of this project is to create a personal portfolio website using HTML and CSS. This website helps to showcase my education, skills, internship experience, and contact details.
 
-## Skills
+## Technologies Used
 
 - HTML
 - CSS
-- JavaScript
-- C++ Programming
-- Data Structures and Algorithms
-- Problem Solving on LeetCode
-- DBMS and SQL
-- Artificial Intelligence Basics
-- Computer Networks Basics
-- Canva Designing
+- Google Fonts
+
+## Features
+
+- Header section with name and navigation menu
+- About Me section with profile image
+- Skills section using list/grid layout
+- Contact section with form
+- External links for LinkedIn, GitHub, and LeetCode
+- Hover effects on navigation links, buttons, image, and skills
+- Responsive design for mobile screens
+- Simple animation using CSS
+
+## CSS Concepts Used
+
+In this project, I used the CSS concepts:
+
+- Google Fonts using `@import`
+- Universal selector for resetting default margin and padding
+- CSS box model using margin, padding, border, and box-shadow
+- Typography styling using font-family, font-size, and font-weight
+- Background color and text color
+- Flexbox for navigation menu
+- CSS Grid for skills section
+- Border radius for rounded corners and circular profile image
+- Hover effects using `:hover`
+- Transitions for smooth effects
+- Form styling for input, textarea, and button
+- Focus effect using `:focus`
+- Animation using `@keyframes`
+- Responsive design using media queries
 
 ## CONTACT
 
@@ -34,4 +57,5 @@ I have also completed my first certified internship at iStart, Government of Raj
 -text
 index.html
 README.md
+style.css
 Image.jpeg
