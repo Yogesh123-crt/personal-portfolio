@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Personal Portfolio website</title>
 </head>
 
 
 <body>
-    <header>     
-        <h1>Yogesh kumar</h1>
-        <p>Web Developer | Student</p>
+    <header id="home">
+        <h1>YOGESH KUMAR</h1>
+        <p>Web Developer | Student | Designer</p>
+        <p> Gmail: yogeshbharatpur4547@gmail.com</p>
+        <span>HOME</span>
+        <button id="menuBtn" class="menu-btn" type="button">☰</button>
 
-        <nav>
+        <nav id="menuBox">
             <ul>
+                
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="toggleSkillsBtn" type="button">Show Skills</button></li>
+                <li><button id="darkModeBtn" type="button">Dark Mode</button></li>
             </ul>
         </nav>
     </header>
-
     <main> 
         <section id="about">
             <h2>About Me</h2>
@@ -41,7 +47,8 @@ I have also completed my first certified internship at iStart, Government of Raj
 
         <section id="skills">
             <h2>My Skills</h2>
-<ul>
+                    
+<ul id="skillslist">
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
@@ -54,18 +61,23 @@ I have also completed my first certified internship at iStart, Government of Raj
     <li>Canva Designing</li>
 </ul>
         </section>
+
 <section id="contact">
         <h2>Contact Me</h2>
-<form>
+<form id="contactForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required> <br>
+    <span id="nameError" class="error"></span><br>
+
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required> <br>
+    <span id="emailError" class="error"></span><br>
 
     <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" required></textarea><br>
-
+    <textarea id="message" name="message" required></textarea> <br>
+    <span id="messageError" class="error"></span><br>
     <button type="submit">Submit</button><br>
+    <p id="formMessage"></p>
 </form>
 <p>LinkedIn: <a href="https://www.linkedin.com/in/yogesh-kumar-265870319?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"> LinkedIn Profile</a></p>
 <p>GitHub: <a href="https://github.com/Yogesh123-crt/Yogesh123-crt" target="_blank">GitHub Profile</a></p>
@@ -76,6 +88,8 @@ I have also completed my first certified internship at iStart, Government of Raj
     <footer> 
         <p>&copy; 2026 yogesh kumar. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

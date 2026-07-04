@@ -1,6 +1,8 @@
-# Personal Portfolio Website
+## Personal portfolio website
+A responsive and interactive portfolio website built with HTML, CSS, and JavaScript.  
+This project showcases skills, projects, and includes a contact form with validation.
 
-This is my personal portfolio website created using HTML and CSS.
+
 
 ## Project Overview
 
@@ -14,6 +16,7 @@ The main objective of this project is to create a personal portfolio website usi
 
 - HTML
 - CSS
+-javascript
 - Google Fonts
 
 ## Features
@@ -26,6 +29,22 @@ The main objective of this project is to create a personal portfolio website usi
 - Hover effects on navigation links, buttons, image, and skills
 - Responsive design for mobile screens
 - Simple animation using CSS
+- Responsive design with modern UI
+- Dark mode toggle (saved in LocalStorage)
+- Interactive navigation menu (☰ toggle)
+- Skills section with show/hide functionality
+- Contact form validation with error messages
+- Smooth animations and hover effects
+
+## HTML concepts
+Semantic tags: `<header>`, `<section>`, `<footer>`
+- Navigation menu with `<nav>` and `<ul>`
+- Contact form with `<form>`, `<input>`, `<textarea>`
+- Profile image with `<img>`
+- Navigation Menu -  hamburger (☰) with buttton
+- Dark Mode Toggle switch theme 
+- Skills Section - show/hide
+- Contact Form - error message spans for validation.
 
 ## CSS Concepts Used
 
@@ -43,10 +62,20 @@ In this project, I used the CSS concepts:
 - Transitions for smooth effects
 - Form styling for input, textarea, and button
 - Focus effect using `:focus`
-- Animation using `@keyframes`
 - Responsive design using media queries
+Animations (`@keyframes fadeIn`)
+- Dark mode styles with `.dark-mode` class
+- Hover effects for buttons and skills
 
-## CONTACT
+## JavaScript concepts
+- DOM selection: `getElementById`, `querySelectorAll`
+- Event listeners: `click`, `submit`
+- DOM manipulation: `classList.toggle`, `textContent`, `style.display`
+- Form validation with reusable functions
+- LocalStorage for theme persistence
+- Console logging for debugging
+
+## link 
 
 - LinkedIn: https://www.linkedin.com/in/yogesh-kumar-265870319
 - GitHub: https://github.com/Yogesh123-crt/Yogesh123-crt
@@ -58,4 +87,5 @@ In this project, I used the CSS concepts:
 index.html
 README.md
 style.css
+script.js
 Image.jpeg
