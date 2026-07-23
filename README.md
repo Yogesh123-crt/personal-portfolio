@@ -6,18 +6,62 @@ This project showcases skills, projects, and includes a contact form with valida
 
 ## Project Overview
 
-This project is a simple and responsive personal portfolio website. It contains my personal information, skills, contact form, and important profile links like LinkedIn, GitHub, and LeetCode.
+- Create a responsive personal portfolio website.
+
+- Showcase education, skills, internship experience, and profile links (LinkedIn, GitHub, LeetCode).
+
+- Provide a contact form with validation and dark mode toggle.
+
+- Ensure compatibility across desktop, tablet, and mobile devices.
 
 ## Objective
 
 The main objective of this project is to create a personal portfolio website using HTML and CSS. This website helps to showcase my education, skills, internship experience, and contact details.
 
-## Technologies Used
 
-- HTML
-- CSS
--javascript
-- Google Fonts
+## Setup Instructions
+1. Install prerequisites:
+- Any modern browser (Chrome, Edge, Firefox, Safari).
+- (Optional) VS Code with Live Server extension.
+
+2. Clone the repository:
+- git clone https://github.com/Yogesh123-crt/portfolio.git
+
+3. Navigate to the project folder:
+- cd portfolio
+4. Open index.html in your browser.
+
+5. (Optional) Run with Live Server in VS Code for auto reload.
+
+6. Check responsiveness:
+
+- Open browser DevTools - Toggle Device Toolbar.
+
+- Test on Android, iPhone, Pixel, Tablet, and Desktop views.
+
+## Code Structure
+File hierarchy:
+
+- index.html        # Main HTML structure
+- main.css          # Base styles, variables, typography
+- layout.css        # Grid, flexbox, positioning, sidebar/hamburger
+- animations.css    # Hover effects, transitions, keyframes
+- script.js         # Dark mode toggle, menu toggle, form validation
+- Image.jpeg        # Profile image
+- README.md         # Documentation
+
+## Visual Documentation
+Screenshots demonstrating functionality:
+
+-Homepage with header, sidebar, and hero text.
+
+-About section with profile image and education details.
+
+-Skills section in responsive grid layout.
+
+-Contact form with validation messages.
+
+-Dark mode enabled view.
 
 ## Features
 
@@ -35,6 +79,9 @@ The main objective of this project is to create a personal portfolio website usi
 - Skills section with show/hide functionality
 - Contact form validation with error messages
 - Smooth animations and hover effects
+
+
+## Technologies Used
 
 ## HTML concepts
 Semantic tags: `<header>`, `<section>`, `<footer>`
@@ -88,6 +135,7 @@ Concepts used:
 
 -Animation timing functions (ease, ease‑in‑out) → natural motion feel
 
+- @media using mobile tablet and desktop responsive layout
 
 ## JavaScript concepts
 - DOM selection: `getElementById`, `querySelectorAll`
@@ -96,15 +144,27 @@ Concepts used:
 - Form validation with reusable functions
 - LocalStorage for theme persistence
 
+## Testing Evidence
+Validation & Test Cases:
 
+- Sidebar toggle works on mobile (hamburger menu opens/closes).
 
-## Project Structure
+- Dark mode button switches theme correctly and persists via LocalStorage.
 
--text
-animations.css
-index.html
-layout.css
-main.css
-README.md
-script.js
-Image.jpeg
+- Contact form validation:
+
+Empty fields → error message.
+
+Invalid email → error message.
+
+Valid input → success message.
+
+- Responsive layout tested on:
+
+Android (Pixel, Samsung Galaxy)
+
+iPhone (SE, 12, 14 Pro)
+
+Tablets (iPad, Android tablets)
+
+Desktop (Windows, MacBook)
