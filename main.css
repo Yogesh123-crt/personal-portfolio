@@ -237,116 +237,12 @@ footer {
     padding: 10px;
 }
 
-/* 📱 Small Phones (Android, iPhone SE, Pixel ≤ 480px) */
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 14px;
-    
-  }
-
-  header h1 {
-    font-size: 22px;
-  }
-  .Email{
-    font-size: 14px;
-  }
-
-  #about p {
-    font-size: 9px;   
-    line-height: 1.5;  
-    padding: 3px;    
-  }
-  .highlight{
-    font-size: 10px;   
-    line-height: 1.5;  
-    padding: 0 8px; 
-  }
-
-  #skillslist{
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-}
-
-  #about img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .social-links a {
-    font-size: 28px;
-    margin: 5px;
-  }
 
   form input, form textarea {
     font-size: 14px;
   }
-}
 
-/* 📲 Medium Phones (iPhone, Android ≥ 481px and ≤ 767px) */
-@media screen and (max-width: 767px) and (min-width: 481px) {
-  header h1 {
-    font-size: 26px;
-  }
 
-  #about img {
-    width: 140px;
-    height: 140px;
-  }
 
-  .social-links a {
-    font-size: 32px;
-  }
-
-  form {
-    padding: 10px;
-  }
-}
-
-/* 📟 Tablets (iPad, Android tablets ≥ 768px and ≤ 1024px) */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  header h1 {
-    font-size: 30px;
-  }
-
-  #about {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  #about img {
-    margin-right: 20px;
-  }
-
-  .social-links a {
-    font-size: 36px;
-  }
-
-  form {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-/* 💻 Laptops & Desktops (≥ 1025px) */
-@media screen and (min-width: 1025px) {
-  header h1 {
-    font-size: 36px;
-  }
-
-  #about {
-    /* flex-direction: row; */
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .social-links a {
-    font-size: 40px;
-  }
-
-  form {
-    width: 60%;
-    margin: auto;
-  }
-}
 
 

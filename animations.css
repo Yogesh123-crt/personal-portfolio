@@ -129,6 +129,46 @@ button:hover {
   }
 }
 
+/* 📱 Small Phones (Android, iPhone SE, Pixel ≤ 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+    
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+  .Email{
+    font-size: 14px;
+  }
+
+  #about p {
+    font-size: 9px;   
+    line-height: 1.5;  
+    padding: 3px;    
+  }
+  .highlight{
+    font-size: 10px;   
+    line-height: 1.5;  
+    padding: 0 8px; 
+  }
+
+  #skillslist{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+  #about img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-links a {
+    font-size: 28px;
+    margin: 5px;
+  }
+
 /* Tablets (iPad, Android tablets ≥ 768px and ≤ 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   header h1 {
