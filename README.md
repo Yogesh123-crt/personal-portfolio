@@ -25,7 +25,7 @@ The main objective of this project is to create a personal portfolio website usi
 - About Me section with profile image
 - Skills section using list/grid layout
 - Contact section with form
-- External links for LinkedIn, GitHub, and LeetCode
+- External icons for LinkedIn, GitHub, and LeetCode
 - Hover effects on navigation links, buttons, image, and skills
 - Responsive design for mobile screens
 - Simple animation using CSS
@@ -41,31 +41,53 @@ Semantic tags: `<header>`, `<section>`, `<footer>`
 - Navigation menu with `<nav>` and `<ul>`
 - Contact form with `<form>`, `<input>`, `<textarea>`
 - Profile image with `<img>`
-- Navigation Menu -  hamburger (☰) with buttton
+- Navigation Menu -  open/close hamburger (☰) with buttton
 - Dark Mode Toggle switch theme 
-- Skills Section - show/hide
 - Contact Form - error message spans for validation.
 
 ## CSS Concepts Used
+#main.css
+1. Purpose: Base styles, variables, colors, and typography.
+Concepts used:
 
-In this project, I used the CSS concepts:
+-CSS Variables (--primary-color, --font-size) → reusable theme values
 
-- Google Fonts using `@import`
-- Universal selector for resetting default margin and padding
-- CSS box model using margin, padding, border, and box-shadow
-- Typography styling using font-family, font-size, and font-weight
-- Background color and text color
-- Flexbox for navigation menu
-- CSS Grid for skills section
-- Border radius for rounded corners and circular profile image
-- Hover effects using `:hover`
-- Transitions for smooth effects
-- Form styling for input, textarea, and button
-- Focus effect using `:focus`
-- Responsive design using media queries
-Animations (`@keyframes fadeIn`)
-- Dark mode styles with `.dark-mode` class
-- Hover effects for buttons and skills
+-Root selectors (:root) → global variable scope
+
+-Reset/Normalize styles → consistent default look across browsers
+
+-Typography hierarchy → headings, paragraphs, font families
+
+-Color palette management → light/dark mode support
+
+#layout.css
+2. Purpose: Structure and positioning of elements.
+Concepts used:
+
+-Advanced Flexbox & Grid Layouts → responsive alignment and spacing
+
+-Positioning (relative, absolute, fixed) → sidebar, navbar, hamburger menu
+
+-Media Queries → adaptive design for mobile and desktop
+
+-Z‑index layering → overlapping elements like modals or menus
+
+-Container & Wrapper classes → maintain consistent layout width
+
+#animations.css
+3. Purpose: Interactive and visual effects.
+Concepts used:
+
+-Transitions (transition: all 0.3s ease) → smooth hover effects
+
+-Keyframes (@keyframes) → custom animations (fade‑in, slide‑up, pulse)
+
+-Transformations (scale, rotate, translate) → icon and button motion
+
+-Hover & Active states → dynamic user interaction
+
+-Animation timing functions (ease, ease‑in‑out) → natural motion feel
+
 
 ## JavaScript concepts
 - DOM selection: `getElementById`, `querySelectorAll`
@@ -73,19 +95,16 @@ Animations (`@keyframes fadeIn`)
 - DOM manipulation: `classList.toggle`, `textContent`, `style.display`
 - Form validation with reusable functions
 - LocalStorage for theme persistence
-- Console logging for debugging
 
-## link 
 
-- LinkedIn: https://www.linkedin.com/in/yogesh-kumar-265870319
-- GitHub: https://github.com/Yogesh123-crt/Yogesh123-crt
-- LeetCode: https://leetcode.com/u/ytv123/
 
 ## Project Structure
 
 -text
+animations.css
 index.html
+layout.css
+main.css
 README.md
-style.css
 script.js
 Image.jpeg

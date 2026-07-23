@@ -3,72 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <title>Personal Portfolio website</title>
 </head>
 
-
 <body>
-    <header id="home">
-        <h1>YOGESH KUMAR</h1>
-        <p>Web Developer | Student | Designer</p>
-        <p> Gmail: yogeshbharatpur4547@gmail.com</p>
-        <span>HOME</span>
-        <button id="menuBtn" class="menu-btn" type="button">☰</button>
+     <header id="header">
+    <div class="menu-toggle">
+        <i class="fas fa-bars" id="openMenu"></i>
+        <i class="fas fa-times" id="closeMenu"></i>
+    </div>
 
-        <nav id="menuBox">
-            <ul>
-                
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="toggleSkillsBtn" type="button">Show Skills</button></li>
-                <li><button id="darkModeBtn" type="button">Dark Mode</button></li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="Image.jpeg" alt="My profile picture" width="180" height="180" style="border-radius: 50%; object-fit: cover;"><br>
-            <h2>About Me</h2>
+    <section id="home" class="home">
+            <span><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="black"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>HOME</span>
+        </section>
 
-<p>
-EDUCATION:
+    <h1 class="home__text">YOGESH KUMAR</h1>
+    <p class="Email">Web Developer | Student | Designer</p>
+    <p class="Email">gmail: 
+        <a href="mailto:yogeshbharatpur4547@gmail.com" class="Email">
+            yogeshbharatpur4547@gmail.com
+        </a>
+    </p>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <div><button id="darkModeBtn" type="button">Dark Mode</button></div>
+        </ul>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yogesh-kumar-265870319" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </nav>
+</header>
+
+
+        
+
+    <main>
+
+       <section id="about">
+            <h2 class="about__title">About Me</h2>
+            <img src="image.png" alt="My profile picture" class="image" ><br>
+
+<p class="highlight">
+<span class="education">EDUCATION:-</span>
 Hello  My name is Yogesh kumar. I am currently pursuing my Bachelor's of Engineering degree in Information Technology from MBM University, Jodhpur</p> <br>
 
-<p>Rajasthan Board of Secondary Education - 93.67%</p><br>
-<p>Rajasthan Board of Higher Secondary Education - 83.67%</p><br>
+<p class="vg">Rajasthan Board of Secondary Education - 93.67%</p><br>
+<p class="vg">Rajasthan Board of Higher Secondary Education - 83.67%</p><br>
 
 
 <p>
 I am interested in web development, programming, problem solving, databases, artificial intelligence, and computer networks. I have basic experience in HTML, CSS, JavaScript, C++, DSA, SQL, and Canva designing.
 </p>
-<p>
+<p class="highlight">
 I have also completed my first certified internship at iStart, Government of Rajasthan. I enjoy learning new technologies and improving my coding skills through platforms like LeetCode.
 </p>
         </section>
 
-        <section id="skills">
-            <h2>My Skills</h2>
+        <section id="skills" class="skills">
+            <h2 skills__text>Skills</h2>
                     
 <ul id="skillslist">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>C++ Programming</li>
-    <li>Data Structures and Algorithms</li>
-    <li>Problem Solving on LeetCode</li>
-    <li>DBMS and SQL</li>
-    <li>Artificial Intelligence Basics</li>
-    <li>Computer Networks Basics</li>
-    <li>Canva Designing</li>
+    <li class="skill">HTML</li>
+    <li class="skill">CSS</li>
+    <li class="skill">JavaScript</li>
+    <li class="skill">C++ Programming</li>
+    <li class="skill">Data Structures and Algorithms</li>
+    <li class="skill">Problem Solving on LeetCode</li>
+    <li class="skill">DBMS and SQL</li>
+    <li class="skill">Artificial Intelligence Basics</li>
+    <li class="skill">Computer Networks Basics</li>
+    <li class="skill">Canva Designing</li>
 </ul>
         </section>
 
-<section id="contact">
-        <h2>Contact Me</h2>
+<section id="contact" class="contact">
+        <h2 class="contact__text">Contact Me</h2>
 <form id="contactForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required> <br>
@@ -84,9 +108,25 @@ I have also completed my first certified internship at iStart, Government of Raj
     <button type="submit">Submit</button><br>
     <p id="formMessage"></p>
 </form>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/yogesh-kumar-265870319?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"> LinkedIn Profile</a></p>
-<p>GitHub: <a href="https://github.com/Yogesh123-crt/Yogesh123-crt" target="_blank">GitHub Profile</a></p>
-<p>LeetCode: <a href="https://leetcode.com/u/ytv123/" target="_blank">LeetCode Profile</a></p>
+
+    <div class="social-links">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <a href="https://www.instagram.com/yogesh_ys57/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/yogesh-kumar-265870319" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/Yogesh123-crt/Yogesh123-crt" target="_blank">
+  <i class="fab fa-github"></i>
+</a>
+
+<a href="https://leetcode.com/u/ytv123/" target="_blank">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/leetcode/leetcode-original.svg" 
+       alt="LeetCode" width="32" height="32">
+</a>
+    </div>
+
+
 </section>
     </main>
 

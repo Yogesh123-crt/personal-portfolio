@@ -1,34 +1,24 @@
 console.log("JavaScript connected");
 
 const body = document.body;
-const menuBtn = document.getElementById("menuBtn");
-const menuBox = document.getElementById("menuBox");
+// dark mode 
 const darkModeBtn = document.getElementById("darkModeBtn");
-const toggleSkillsBtn = document.getElementById("toggleSkillsBtn");
-const skillslist = document.getElementById("skillslist");
 
-const contactForm = document.getElementById("contactForm");
-const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const messageInput = document.getElementById("message");
+// hamburger menu
+const openMenu = document.getElementById("openMenu");
+const closeMenu = document.getElementById("closeMenu");
+const sidebar = document.getElementById("sidebar");
 
-const nameError = document.getElementById("nameError");
-const emailError = document.getElementById("emailError");
-const messageError = document.getElementById("messageError");
-const formMessage = document.getElementById("formMessage");
+openMenu.addEventListener("click", () => {
+  sidebar.classList.add("active");
+  openMenu.style.display = "none";    
+  closeMenu.style.display = "inline"; 
+});
 
-//Skills Toggle 
-skillslist.style.display = "none";
-toggleSkillsBtn.textContent = "Show Skills";
-
-toggleSkillsBtn.addEventListener("click", function () {
-    if (skillslist.style.display === "none") {
-        skillslist.style.display = "block";
-        toggleSkillsBtn.textContent = "Hide Skills";
-    } else {
-        skillslist.style.display = "none";
-        toggleSkillsBtn.textContent = "Show Skills";
-    }
+closeMenu.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  closeMenu.style.display = "none"; 
+  openMenu.style.display = "inline"; 
 });
 
 // Dark Mode 
@@ -55,22 +45,20 @@ darkModeBtn.addEventListener("click", function () {
     }
 });
 
-// Menu Toggle
-menuBtn.addEventListener("click", function () {
-    menuBox.classList.toggle("show-menu");
-});
 
-// Close menu 
-const menuItems = menuBox.querySelectorAll("a, button");
-menuItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-        menuBox.classList.remove("show-menu");
-    });
-});
+const contactForm = document.getElementById("contactForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
 
-// contact validation form
+const nameError = document.getElementById("nameError");
+const emailError = document.getElementById("emailError");
+const messageError = document.getElementById("messageError");
+const formMessage = document.getElementById("formMessage");
+
 function showError(element, message) {
     element.textContent = message;
+    element.style.color = "red";
 }
 
 function clearError(element) {
@@ -112,6 +100,10 @@ function validateMessage() {
     clearError(messageError);
     return true;
 }
+// instant validation error 
+nameInput.addEventListener("input", validateName);
+emailInput.addEventListener("input", validateEmail);
+messageInput.addEventListener("input", validateMessage);
 
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault(); 
@@ -132,3 +124,8 @@ contactForm.addEventListener("submit", function (e) {
         formMessage.textContent = "";
     }
 });
+
+
+
+
+
