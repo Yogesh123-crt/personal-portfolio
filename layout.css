@@ -1,7 +1,7 @@
 
 #skillslist{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(200px, 2fr));
     grid-auto-rows: repeat(2,200px);
     grid-gap:1px;
 }
@@ -21,7 +21,7 @@
 #header section span {
   position: absolute;   
   top: 20px;            
-  left: 20px;           
+  left: 10px;           
   color: black;      
 }
 /* responsive hamburger */
